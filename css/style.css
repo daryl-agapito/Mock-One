@@ -419,11 +419,12 @@ p {
 .services-image-1 {
   width: 75%;
   height: 85%;
-  object-position: top left;
+  right: 0;
+  position: absolute;
 }
 
 .services-image-1 img {
-  object-position: bottom right;
+  object-position: top center;
 }
 
 .services-image-2 img {
@@ -431,12 +432,12 @@ p {
 }
 
 .services-image-2 {
-  width: 60%;
-  height: 60%;
+  width: 70%;
+  height: 70%;
   position: absolute;
   z-index: 2;
   bottom: 0;
-  right: var(--card-content-spacing);
+  left: var(--card-content-spacing);
 }
 
 .services-add-text-container {
@@ -722,7 +723,7 @@ p {
 }
 
 .slider-img {
- background: url(/images/reviews.jpg);
+ background: url(/images/hero2.jpg);
  background-size: cover;
  background-position: center center;
 }
