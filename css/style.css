@@ -195,7 +195,6 @@ p {
 
 .about-container {
   margin-bottom: var(--global-spacing);
-  overflow: hidden;
 }
 
 .about-caption-container {
@@ -205,7 +204,6 @@ p {
 }
 
 .about-caption-container .row {
-  height: fit-content;
   --bs-gutter-x: var(--card-spacing);
 }
 
@@ -836,16 +834,17 @@ a.footer-link,
 
 /* Mobile */
 @media only screen and (max-width: 992px) {
+  h1 {
+    font-size: 2.5em;
+  }
   .hero-caption {
     display: flex;
     justify-content: center;
     text-align: center;
   }
-
   .about-pop-container {
     position: relative;
     width: 100%;
-    z-index: 2;
     bottom: 0;
     left: 0;
   }
@@ -885,6 +884,11 @@ a.footer-link,
   .col-md-6 {
     margin-top: 1.5rem;
     --bs-gutter-y: 1rem;
+  }
+
+  .about-pop-container {
+    position: absolute;
+    width: 80%;
   }
 
   .blog-slider-wrapper .blog-slider-carousel {
